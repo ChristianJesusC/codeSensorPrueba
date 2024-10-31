@@ -21,10 +21,14 @@ app.post('/datosSensor', (req, res) => {
     });
 
     res.status(200).json({ message: "Datos enviados con claridad" });
+    console.log("Datos recibidos");
+    
 });
 
 app.get('/datosSensor', (req, res) => {
     res.status(200).json(sensorData);
+    console.log("Datos enviados");
+    
 });
 
 app.listen(port, () => {
